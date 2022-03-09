@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/Formulario.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="img/iconLibro.png" alt="icono de libro" title="Esto es una imagen de in libro" width="200" height="200">
+                <div class="letrasCabecera">
+                    <h1>Tu guía de lectura</h1>
+                    <h2>Un lugar donde puedes encontrar los titulos de los libros del mes</h2>
+                </div>  
+            </div>
+            <nav class="navegacion">
+                <a class="inicio" href="Index.html"> Inicio</a>
+                <a class="libros" href="Libros.html"> Libros</a>
+                <a class="registrate" href="Formulario.html">Registrate</a>
+                <a class="contacto" href="Contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <div class="formulario">
+            <form action="procesarPeticion.jsp" method="get">
+                <fieldset><legend>Datos personales:</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" autofocus required>
+                    <br /> 
+                    <br /> 
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+                    <br /> 
+                    <br /> 
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    <br /> 
+                    <br /> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Introduce tu email">
+                    <br /> 
+                    <br /> 
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required>
+                </fieldset>
+                <fieldset><legend>Sobre ti:</legend>
+                    <label for="genero">Generos favoritos:</label>
+                    <br /> 
+                    <input type="checkbox" name="generosFavoritos" value="accion" checked>Accion <br />
+                    <input type="checkbox" name="generosFavoritos" value="fantasia" >Fantasia <br />
+                    <input type="checkbox" name="generosFavoritos" value="juvenil" >Juvenil<br />
+                    <input type="checkbox" name="generosFavoritos" value="historicos" >Historicos <br />
+                    <input type="checkbox" name="generosFavoritos" value="romanticos" >Romanticos <br />
+                    <br />
+        
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" placeholder="Introduce tu número de telefono"> 
+                </fieldset>
+                <label for="terminos">¿Acepta los términos de uso?<input type="checkbox" name="terminos" value="Si" required/></label>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <footer>
+            <p>Todos los derechos estan reservados &copy;</p>
+        </footer>
+    </main>
+</body>   
+</html>

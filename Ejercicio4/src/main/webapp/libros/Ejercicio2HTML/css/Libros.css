@@ -1,0 +1,108 @@
+header{
+    height: 250px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgba(158, 85, 226, 0.5);
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.letrasCabecera{
+    color: white;
+    position: relative;
+    top: -170px;
+    left: 201px;
+}
+
+.navegacion{
+    position: relative;
+    top: -130px;
+    height: 49px;
+    background-color: rgb(161, 255, 224);
+}
+
+a{
+    padding-bottom: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}
+
+section, footer{
+    width: 960px;
+    margin: 0 auto;
+}
+
+section{
+    background-color: rgb(255, 243, 227);
+    margin-top: -17px;
+}
+
+.tabla{
+    margin-top: 17px;
+    border-color: rgba(158, 85, 226, 0.5);
+}
+
+th{
+    border-color: rgba(158, 85, 226, 0.5); 
+}
+
+td{
+    border-color: rgba(158, 85, 226, 0.5);
+}
+
+.libros:hover{
+    background-color: rgb(104, 255, 205);
+}
+
+.registrate:hover{  
+    background-color: rgb(104, 255, 205);
+}
+
+.contacto:hover{
+    background-color: rgb(104, 255, 205);
+}
+
+.inicio:hover{
+    background-color: rgb(104, 255, 205);
+}
+
+
+@media screen and (max-width: 1000px) {
+    header{
+        width: 98%;
+    }
+
+    .letrasCabecera{
+        width: 650px; 
+    }
+    
+    section{
+        width: 98%
+    }
+}
+
+@media screen and (max-width: 700px){
+    header{
+        width: 98%;
+    }
+
+    section{
+        width: 98%;
+    }
+
+    .letrasCabecera{
+
+        width: 400px;
+        font-size: x-small;
+    }
+
+    .navegacion{
+        height: 30px;
+        position: relative;
+        top: -79px;
+    } 
+} 
